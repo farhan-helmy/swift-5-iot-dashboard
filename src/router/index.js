@@ -13,40 +13,12 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/Home.vue'),
+      component: () => import('@/views/charts/LineChart.vue'),
       meta: {
         pageTitle: 'Home',
         breadcrumb: [
           {
             text: 'Home',
-            active: true,
-          },
-        ],
-      },
-    },
-    {
-      path: '/chart',
-      name: 'chart',
-      component: () => import('@/views/charts/LineChart.vue'),
-      meta: {
-        pageTitle: 'Statistics',
-        breadcrumb: [
-          {
-            text: 'Statistics',
-            active: true,
-          },
-        ],
-      },
-    },
-    {
-      path: '/second-page',
-      name: 'second-page',
-      component: () => import('@/views/SecondPage.vue'),
-      meta: {
-        pageTitle: 'Second Page',
-        breadcrumb: [
-          {
-            text: 'Second Page',
             active: true,
           },
         ],
